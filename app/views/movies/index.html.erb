@@ -1,0 +1,20 @@
+ <p style="color: green"><%= notice %></p>
+
+ <img src="https://assets.megamediaradios.fm/2020/08/blockbuster.jpg" class="img-fluid" alt="...">
+<br>
+
+ <div class="container">
+
+  <h1 class="my-5">Peliculas</h1>
+  <%= button_to"Nueva pelicula", new_movie_path %>
+  <br>
+  <div id="movies">
+    <div class="row">
+      <% @movies.each do |movie| %>
+        <%= render movie %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+

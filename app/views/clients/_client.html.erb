@@ -1,0 +1,11 @@
+<div id="<%= dom_id client %>">
+  <tr class = "table-success" >
+    <th scope="row"><%= client.id %></th>
+    <td><%= client.name %></td>
+    <td><%= client.age %></td>
+    <td><%= client.movies.last %></td>
+    <td><%= button_to "Mostrar a este cliente", client %></td>
+    <td><%= button_to "Editar este cliente", edit_client_path(client) %></td>
+    <td><%= button_to "Destruir a este cliente", @client, method: :delete %></td>
+  </tr>
+</div>

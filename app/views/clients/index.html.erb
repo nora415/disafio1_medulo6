@@ -1,0 +1,56 @@
+<p style="color: green"><%= notice %></p>
+
+<img src="https://assets.megamediaradios.fm/2020/08/200811110507-03-blockbuster-airbnb-bend-oregon-full-169.jpg" class="img-fluid" alt="...">
+<br>
+  
+<h1 class="my-5">Clientes</h1>
+<%= button_to "Nuevo cliente", new_client_path %>
+  <div id="clientes">
+    <div class="my-5">
+  <table class="table table-dark table-striped">
+      <thead>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Años</th>
+          <th scope="col">Pelicula</th>
+          <th scope="col" colspan="3"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @clients.each do |client| %>
+          <%= render client %>
+        <% end %>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+<div class="card-group" style="width: 80rem; ">
+  <div class="card ms-5">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU3htubkh2HYQCgSUzK3ivdu2ICzqsGN_igw&s" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">MOANA 2</h5>
+      <p class="card-text">MOANA 2, la película animada de Walt Disney Animation Studios, embarca a las audiencias en un nuevo y grandioso viaje con Moana, Maui y una nueva tripulación de inusuales marineros. Tras recibir una inesperada llamada de sus antepasados, Moana debe viajar por los lejanos mares de Oceanía y adentrarse en peligrosas aguas perdidas para vivir una aventura sin precedentes.</p>
+      <p class="card-text"><small class="text-body-secondary">próximamente</small></p>
+    </div>
+  </div>
+  <div class="card ms-5">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiQAaoIujTzfclH2TVHCJRnj5UH0OWvRT8Xw&s" class="card-img-top" alt="200x200">
+    <div class="card-body">
+      <h5 class="card-title">BAGMAN: EL ESPIRITU DEL MAL</h5>
+      <p class="card-text">Cuando una siniestra amenaza de su infancia vuelve para atormentarle, un padre lucha desesperadamente contra su miedo interior más profundo. Pero esta vez, la lucha no es por sí mismo, sino por su familia.</p>
+      <p class="card-text"><small class="text-body-secondary">próximamente</small></p>
+    </div>
+  </div>
+  <div class="card ms-5">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlSdRI1XTP7DT5gkwYx6p_PuCwCBoZnbPueA&s" class="card-img-top" alt="200x200">
+    <div class="card-body">
+      <h5 class="card-title">SONIC 3: LA PELICULA</h5>
+      <p class="card-text">Sonic the Hedgehog regresa a la gran pantalla estas Navidades en su aventura más emocionante hasta la fecha. Sonic, Knuckles y Tails se reúnen para enfrentarse a un nuevo y poderoso adversario, Shadow, un misterioso villano con poderes nunca vistos. Con sus habilidades superadas en todos los sentidos, el Equipo Sonic debe buscar una improbable alianza con la esperanza de detener a Shadow y proteger el planeta.</p>
+      <p class="card-text"><small class="text-body-secondary">próximamente</small></p>
+    </div>
+  </div>
+</div>
+<br>
+
