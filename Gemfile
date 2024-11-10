@@ -57,5 +57,3 @@ group :test do
 end
 
 gem 'faker'
-gem "cssbundling-rails"
-gem "jsbundling-rails"
