@@ -59,3 +59,4 @@ end
 gem 'faker'
 gem "cssbundling-rails"
 gem "jsbundling-rails"
+gem 'sprockets-rails'
