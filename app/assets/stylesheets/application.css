@@ -13,6 +13,4 @@
  *= require_tree .
  *= require_self
  */
-
- @import url(app/assets/webfonts);
- @import url(app/assets/stylesheets/main.css);
+ 
